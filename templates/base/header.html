@@ -1,7 +1,17 @@
-<a href="{% url 'lista_produto' %}"><p>header</p></a>
-<nav>
-    <div>
-        <a href="{% url 'criar_produto' %}">Cadastrar Novo Item</a>
-        <a href="{% url 'criar_categoria' %}">Criar Nova Categoria</a>
+<div class="header-container">
+    <div class="header-titulo">
+        <a href="{% url 'lista_produto' %}">
+            <p>
+                <i class="fa-solid fa-cart-shopping"></i>
+                tecnoShopp
+                <i class="fa-solid fa-truck-fast"></i>
+            </p>
+        </a>
     </div>
-</nav>
+    <nav>
+        <div class="header-nav">
+            <a href="{% url 'criar_produto' %}">Cadastrar Novo Item</a>
+            <a href="{% url 'criar_categoria' %}">Criar Nova Categoria</a>
+        </div>
+    </nav>
+</div>

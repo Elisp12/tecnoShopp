@@ -1,3 +1,53 @@
 body {
-    background-color: red;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-container {
+    background-color: rgb(16, 8, 42);
+    margin: auto;
+    padding: 15px;
+    width: 100%;
+    right: 400px;
+}
+
+.header-titulo {
+    margin: auto;
+    padding: 5px;
+    margin: 5px;
+}
+
+.header-titulo a {
+    text-align: center;
+    color: azure;
+}
+
+.header-titulo p{
+    text-transform: uppercase;
+    padding: 10px;
+    margin: auto;
+    background-color: rgb(93, 10, 10);
+    width: 200px;
+} 
+
+.header-container a {
+    text-decoration: none;
+}
+
+.header-container a:hover {
+    color: rgb(246, 246, 9);
+}
+
+.header-nav {
+    font-size: 10px;
+    text-align: end;
+    margin-right: 30px;
+}
+
+.header-nav a {
+    text-transform: uppercase;
+    color: aqua;
+    padding: 5px;
+    margin: 5px;
 }
