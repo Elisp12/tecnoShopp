@@ -1,14 +1,17 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <form action="#" method="POST">
+    <form class="formulario" action="#" method="post">
         {% csrf_token %}
-        <label for="nome">Digite um Nome para categoria</label>
-        <input type="text" name="nome" id="categoria" required>
+        <fieldset>
+            <legend>Cadastrar Nova Categoria</legend>
+            <label for="nome">Digite um Nome para categoria</label>
+            <input type="text" name="nome" id="categoria" maxlength="30" required>
 
-        <div>
-            <input type="submit" value="Criar">
-        </div>
-       
+            <div>
+                <input type="submit" value="Criar">
+                <input type="reset" value="Limpar">
+            </div>
+       </fieldset>
     </form>
 {% endblock %}

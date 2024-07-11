@@ -1,20 +1,20 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    {% for pdc in produto_da_categoria %}
     <div class="main-lista-produto">
-        <div class="card">
-            <ul>
-                <li><h3>{{ pdc.nome }}</h3></li>
-                <li class="descricao">{{ pdc.descricao }}</li>
-                <li class="card-categoria"><a href="/categoria/produto/{{pdc.categoria.index}}/">{{ pdc.categoria.nome }}</a></li>
+        {% for pdc in produto_da_categoria %}
+            <div class="card">
+                <ul>
+                    <li><h3>{{ pdc.nome }}</h3></li>
+                    <li class="descricao">{{ pdc.descricao }}</li>
+                    <li class="card-categoria"><a href="/categoria/produto/{{pdc.categoria.index}}/">{{ pdc.categoria.nome }}</a></li>
 
-            </ul>
-            <div class="card-link">
-                <a class="card-link-atualizar" href="/atualizar/produto/{{pdc.index}}/">Atualizar <i class="fa-solid fa-pen"></i></a>
-                <a class="card-link-deletar" href="/deletar/produto/{{pdc.index}}/">Deletar <i class="fa-solid fa-trash"></i></a>
+                </ul>
+                <div class="card-link">
+                    <a class="card-link-atualizar" href="/atualizar/produto/{{pdc.index}}/">Atualizar <i class="fa-solid fa-pen"></i></a>
+                    <a class="card-link-deletar" href="/deletar/produto/{{pdc.index}}/">Deletar <i class="fa-solid fa-trash"></i></a>
+                </div>
             </div>
-        </div>
-    </div>
     {% endfor %}
+    </div>
 {% endblock%}
