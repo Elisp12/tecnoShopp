@@ -5,12 +5,13 @@
         {% for lp in lista_produto %}
             <div class="card">
                 <ul>
-                    <li>{{ lp.nome }}</li>
-                    <li>{{ lp.descricao }}</li>
+                    <li><h3>{{ lp.nome }}</h3></li>
+                    <li class="descricao">{{ lp.descricao }}</li>
                     <li><a href="/categoria/produto/{{lp.categoria.index}}/">{{ lp.categoria.nome }}</a></li>
 
                 </ul>
-                <div>
+               
+                <div class="card-link">
                     <a href="/atualizar/produto/{{lp.index}}/">Atualizar <i class="fa-solid fa-pen"></i></a>
                     <a href="/deletar/produto/{{lp.index}}/">Deletar <i class="fa-solid fa-trash"></i></a>
                 </div>
