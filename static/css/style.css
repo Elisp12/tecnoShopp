@@ -104,11 +104,40 @@ main {
     overflow: auto;
 }
 
+.card-categoria {
+    color: darkblue;
+}
+
+.card-categoria:hover {
+    font-weight: bold;
+}
+
 .card-link {
     text-align: end;
+    font-size: 15px;
     margin: 10px;
-    padding-right: 15px;
+    padding : 10px;
 }
+.card-link a {
+    margin: 20px;
+}
+
+.card-link-atualizar {
+    color: green;
+}
+
+.card-link-atualizar:hover {
+    font-weight: bold;
+}
+
+.card-link-deletar {
+    color: red;
+}
+
+.card-link-deletar:hover {
+    font-weight: bold;
+}
+
 .card a {
     text-decoration: none;
 }
