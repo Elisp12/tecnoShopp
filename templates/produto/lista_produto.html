@@ -3,18 +3,18 @@
 {% block content %}
     <div class="main-lista-produto">
         {% for lp in lista_produto %}
-        <div>
-            <ul>
-                <li>{{ lp.nome }}</li>
-                <li>{{ lp.descricao }}</li>
-                <li><a href="/categoria/produto/{{lp.categoria.index}}/">{{ lp.categoria.nome }}</a></li>
+            <div class="card">
+                <ul>
+                    <li>{{ lp.nome }}</li>
+                    <li>{{ lp.descricao }}</li>
+                    <li><a href="/categoria/produto/{{lp.categoria.index}}/">{{ lp.categoria.nome }}</a></li>
 
-            </ul>
-            <div>
-                <a href="/atualizar/produto/{{lp.index}}/">Atualizar</a>
-                <a href="/deletar/produto/{{lp.index}}/">Deletar</a>
+                </ul>
+                <div>
+                    <a href="/atualizar/produto/{{lp.index}}/">Atualizar <i class="fa-solid fa-pen"></i></a>
+                    <a href="/deletar/produto/{{lp.index}}/">Deletar <i class="fa-solid fa-trash"></i></a>
+                </div>
             </div>
-        </div>
-    {% endfor %}
-</div>
+        {% endfor %}
+    </div>
 {% endblock %}
