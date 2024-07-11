@@ -52,32 +52,88 @@ body {
 }
 
 main {
-    height: 90vh;
+    height: auto;
+    background-color: rgb(195, 199, 199);
 }
 
 .main-lista-produto {
+    margin: auto;
+    width: 90%;
+    min-height: 75vh;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 10px;
+}
+
+.card   {
+    background-color: white;
+    display: inline-block;
+    font-size: 20px;
+    margin: auto;
+    width: 300px;
+    height: 290px;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+
+}
+
+.card ul {
+    list-style: none;
+    text-align: end;
+    margin: 10px;
+    padding: 10px;
+    display: block;
+}
+
+.card ul li {
+    margin-bottom: 15px;
+}
+
+.descricao {
     width: 100%;
-    height: 100%;
+    height: 70px;
+    padding: 5px;
+    border: 1px solid rgb(177, 166, 166);
+    text-align: left;
     overflow: auto;
 }
 
+.card-link {
+    text-align: end;
+    margin: 10px;
+    padding-right: 15px;
+}
+.card a {
+    text-decoration: none;
+}
 
 .footer {
     background-color: darkgray;
     color: darkslategrey;
-    text-align: end;
     font-size: 10px;
-    padding: 5px;
-    margin: auto;
-    position: relative;
-}
-.footer-box {
-    width: 90%;
-    margin: auto;
 }
 
-.footer-nome {
-    position: absolute;
-    text-align: justify;
-    bottom: 5px;
+.footer-box {
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#footer-p-1 {
+    padding-left: 15px;
+}
+
+#footer-p-2 {
+    padding-right: 15px;
 }
