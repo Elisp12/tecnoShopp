@@ -8,14 +8,14 @@ body {
     background-color: rgb(16, 8, 42);
     margin: auto;
     padding: 15px;
-    width: 100%;
     right: 400px;
 }
 
 .header-titulo {
     margin: auto;
     padding: 5px;
-    margin: 5px;
+    margin: auto;
+    width: 200px;
 }
 
 .header-titulo a {
@@ -28,7 +28,6 @@ body {
     padding: 10px;
     margin: auto;
     background-color: rgb(93, 10, 10);
-    width: 200px;
 } 
 
 .header-container a {
@@ -50,4 +49,31 @@ body {
     color: aqua;
     padding: 5px;
     margin: 5px;
+}
+
+main {
+    height: 90vh;
+}
+
+.main-lista-produto {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+
+.footer {
+    background-color: darkgray;
+    color: darkslategrey;
+    text-align: end;
+    font-size: 10px;
+    padding: 5px;
+    margin: auto;
+    position: relative;
+}
+
+.footer-nome {
+    position: absolute;
+    text-align: justify;
+    bottom: 5px;
 }
