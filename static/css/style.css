@@ -71,6 +71,10 @@ main {
     margin: auto;
     position: relative;
 }
+.footer-box {
+    width: 90%;
+    margin: auto;
+}
 
 .footer-nome {
     position: absolute;
