@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    {% for pdc in produto_da_categoria %}
+    <div>
+        <ul>
+            <li>{{ pdc.nome }}</li>
+            <li>{{ pdc.descricao }}</li>
+            <li><a href="/categoria/produto/{{pdc.categoria.index}}/">{{ pdc.categoria.nome }}</a></li>
+
+        </ul>
+        <div>
+            <a href="/atualizar/produto/{{pdc.index}}/">Atualizar</a>
+            <a href="/deletar/produto/{{pdc.index}}/">Deletar</a>
+        </div>
+    </div>
+    {% endfor %}
+{% endblock%}

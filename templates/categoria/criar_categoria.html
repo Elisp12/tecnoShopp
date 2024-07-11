@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <form action="#" method="POST">
+        {% csrf_token %}
+        <label for="nome">Digite um Nome para categoria</label>
+        <input type="text" name="nome" id="categoria" required>
+
+        <div>
+            <input type="submit" value="Criar">
+        </div>
+
+    </form>
+{% endblock %}

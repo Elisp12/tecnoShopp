@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    {% for lp in lista_produto %}
+        <div>
+            <ul>
+                <li>{{ lp.nome }}</li>
+                <li>{{ lp.descricao }}</li>
+                <li><a href="/categoria/produto/{{lp.categoria.index}}/">{{ lp.categoria.nome }}</a></li>
+
+            </ul>
+            <div>
+                <a href="/atualizar/produto/{{lp.index}}/">Atualizar</a>
+                <a href="/deletar/produto/{{lp.index}}/">Deletar</a>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
