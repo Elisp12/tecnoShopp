@@ -1,18 +1,21 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    {% for lp in lista_produto %}
-        <div>
-            <ul>
-                <li>{{ lp.nome }}</li>
-                <li>{{ lp.descricao }}</li>
-                <li><a href="/categoria/produto/{{lp.categoria.index}}/">{{ lp.categoria.nome }}</a></li>
+    <div class="main-lista-produto">
+        {% for lp in lista_produto %}
+            <div class="card">
+                <ul>
+                    <li><h3>{{ lp.nome }}</h3></li>
+                    <li class="descricao">{{ lp.descricao }}</li>
+                    <li class="card-categoria"><a href="/categoria/produto/{{lp.categoria.index}}/">{{ lp.categoria.nome }}</a></li>
 
-            </ul>
-            <div>
-                <a href="/atualizar/produto/{{lp.index}}/">Atualizar</a>
-                <a href="/deletar/produto/{{lp.index}}/">Deletar</a>
+                </ul>
+               
+                <div class="card-link">
+                    <a class="card-link-atualizar" href="/atualizar/produto/{{lp.index}}/">Atualizar <i class="fa-solid fa-pen"></i></a>
+                    <a class="card-link-deletar" href="/deletar/produto/{{lp.index}}/">Deletar <i class="fa-solid fa-trash"></i></a>
+                </div>
             </div>
-        </div>
-    {% endfor %}
+        {% endfor %}
+    </div>
 {% endblock %}

@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-container {
+    background-color: rgb(16, 8, 42);
+    margin: auto;
+    padding: 15px;
+    right: 400px;
+}
+
+.header-titulo {
+    margin: auto;
+    padding: 5px;
+    margin: auto;
+    width: 200px;
+}
+
+.header-titulo a {
+    text-align: center;
+    color: azure;
+}
+
+.header-titulo p{
+    text-transform: uppercase;
+    padding: 10px;
+    margin: auto;
+    background-color: rgb(93, 10, 10);
+} 
+
+.header-container a {
+    text-decoration: none;
+}
+
+.header-container a:hover {
+    color: rgb(246, 246, 9);
+}
+
+.header-nav {
+    font-size: 10px;
+    text-align: end;
+    margin-right: 30px;
+}
+
+.header-nav a {
+    text-transform: uppercase;
+    color: aqua;
+    padding: 5px;
+    margin: 5px;
+}
+
+main {
+    height: auto;
+    background-color: rgb(195, 199, 199);
+}
+
+.main-lista-produto {
+    margin: auto;
+    width: 90%;
+    min-height: 75vh;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 10px;
+}
+
+.card   {
+    background-color: white;
+    display: inline-block;
+    font-size: 20px;
+    margin: auto;
+    width: 300px;
+    height: 290px;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+
+}
+
+.card ul {
+    list-style: none;
+    text-align: end;
+    margin: 10px;
+    padding: 10px;
+    display: block;
+}
+
+.card ul li {
+    margin-bottom: 15px;
+}
+
+.descricao {
+    width: 100%;
+    height: 70px;
+    padding: 5px;
+    border: 1px solid rgb(177, 166, 166);
+    text-align: left;
+    overflow: auto;
+}
+
+.card-categoria {
+    color: darkblue;
+}
+
+.card-categoria:hover {
+    font-weight: bold;
+}
+
+.card-link {
+    text-align: end;
+    font-size: 15px;
+    margin: 10px;
+    padding : 10px;
+}
+.card-link a {
+    margin: 20px;
+}
+
+.card-link-atualizar {
+    color: green;
+}
+
+.card-link-atualizar:hover {
+    font-weight: bold;
+}
+
+.card-link-deletar {
+    color: red;
+}
+
+.card-link-deletar:hover {
+    font-weight: bold;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+
+.formulario {
+    width: 20%;
+    height: 50%;
+    min-height: 80vh;
+
+    font-size: 20px;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario fieldset {
+    background-color: azure;
+
+    margin: 5px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario legend {
+    background-color: grey;
+    color: darkslategrey;
+    text-transform: uppercase;
+}
+
+.formulario input:focus {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+.form-descricao {
+    padding: 30px;
+}
+
+.formulario fieldset select {
+    margin-bottom: 15px;
+}
+
+.formulario div {
+    text-align: end;
+}
+.formulario div input:hover {
+    font-weight: bold;
+    color: darkred;
+}
+
+.footer {
+    background-color: darkgray;
+    color: darkslategrey;
+    font-size: 10px;
+}
+
+.footer-box {
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#footer-p-1 {
+    padding-left: 15px;
+}
+
+#footer-p-2 {
+    padding-right: 15px;
+}
