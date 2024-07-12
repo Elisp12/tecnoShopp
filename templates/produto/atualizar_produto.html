@@ -9,10 +9,8 @@
             {% for p in produto %}
                 <label for="nome">Nome</label>
                 <input type="text" name="nome" id="nome" value="{{p.nome}}">
-                <br>
                 <label for="descricao">Descrição</label>
-                <input type="text" name="descricao" id="descricao" value="{{p.descricao}}">
-                <br>
+                <input class="form-descricao" type="text" name="descricao" id="descricao" value="{{p.descricao}}">
                 <label for="categoria">Categoria</label>
                 <select name="categoria" id="categoria" required>
                     <option value="">Selecione</option>
@@ -26,5 +24,4 @@
             {% endfor %}
         </fieldset>
     </form>
-
 {% endblock %}
