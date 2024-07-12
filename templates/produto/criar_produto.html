@@ -17,6 +17,8 @@
                     <option value="{{ cat.index }}">{{ cat.nome }}</option>
                 {% endfor %}
             </select>
+            <label for="quantidade">Quantidade</label>
+            <input class="quantidade-input" type="number" min="0" max="2000" name="quantidade" id="quantidade" required>
             <div>
                 <input type="submit" value="Criar">
                 <input type="reset" value="Limpar">

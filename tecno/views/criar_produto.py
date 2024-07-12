@@ -7,9 +7,10 @@ def criar_produto(request):
     nome = request.POST.get('nome')
     descricao = request.POST.get('descricao')
     categoria = request.POST.get('categoria')
+    quantidade = request.POST.get('quantidade')
     
     if request.method == 'POST':
-        Produto.objects.create(nome = nome, descricao = descricao, categoria = Categoria.objects.get(index = categoria))
+        Produto.objects.create(nome = nome, descricao = descricao, categoria = Categoria.objects.get(index = categoria), quantidade = quantidade)
         return redirect('lista_produto')
 
     lista_categoria = Categoria.objects.all()
