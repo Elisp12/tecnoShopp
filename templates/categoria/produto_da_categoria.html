@@ -8,7 +8,7 @@
                     <li><h3>{{ pdc.nome }}</h3></li>
                     <li class="descricao">{{ pdc.descricao }}</li>
                     <li class="card-categoria"><a href="/categoria/produto/{{pdc.categoria.index}}/">{{ pdc.categoria.nome }}</a></li>
-
+                    <li class="quantidade">{{pdc.quantidade}}<i class="fa-solid fa-box"></i></li>
                 </ul>
                 <div class="card-link">
                     <a class="card-link-atualizar" href="/atualizar/produto/{{pdc.index}}/">Atualizar <i class="fa-solid fa-pen"></i></a>
