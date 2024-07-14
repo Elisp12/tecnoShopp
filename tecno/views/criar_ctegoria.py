@@ -8,7 +8,7 @@ def criar_categoria(request):
     print(nome)
     
     if request.method == 'POST':
-        categoria = Categoria.objects.create(nome = nome)
+        categoria = Categoria.objects.filter(nome = nome).update(nome = nome)
         return redirect('lista_produto')
     
     categoria = Categoria.objects.all()
