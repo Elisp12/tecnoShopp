@@ -8,10 +8,20 @@
             </p>
         </a>
     </div>
-    <nav>
-        <div class="header-nav">
-            <a href="{% url 'criar_produto' %}">Cadastrar Novo Item</a>
-            <a href="{% url 'criar_categoria' %}">Criar Nova Categoria</a>
+    <nav class="header-nav">
+        <div>
+            <ul>
+                <li>Cadastrar
+                    <ul>
+                        <li>
+                            <a href="{% url 'criar_produto' %}">Novo Item</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'criar_categoria' %}">Nova Categoria</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </nav>
 </div>
