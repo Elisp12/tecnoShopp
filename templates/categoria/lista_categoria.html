@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <div class="main-lista-categoria">
+        <table>
+            <tr>
+                <th>Categorias</th>
+                <th>deletar</th>
+            </tr>
+            {% for lcat in lista_categoria %}
+                <tr>
+                    <td>{{ lcat.nome }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}
