@@ -8,13 +8,15 @@ body {
     background-color: rgb(16, 8, 42);
     margin: auto;
     padding: 15px;
-    right: 400px;
+    right: 500px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .header-titulo {
     margin: auto;
-    padding: 5px;
-    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
     width: 200px;
 }
 
@@ -34,21 +36,40 @@ body {
     text-decoration: none;
 }
 
-.header-container a:hover {
-    color: rgb(246, 246, 9);
+.header-nav {
+    font-size: 15px;
+    width: 180px;
 }
 
-.header-nav {
+.header-nav li {
+    color: aqua;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.header-nav li ul{
+    height: 0;
+    overflow: hidden;
+    transition: heigth 0.5s;
+}
+.header-nav li:hover ul {
     font-size: 10px;
-    text-align: end;
-    margin-right: 30px;
+    height: 30px;
+}
+
+.header-nav li ul li {
+    padding-bottom: 3px;
 }
 
 .header-nav a {
     text-transform: uppercase;
-    color: aqua;
-    padding: 5px;
+    color: yellow;
     margin: 5px;
+    padding-bottom: 5px;
+}
+
+.header-container a:hover {
+    color: rgb(24, 104, 21);
 }
 
 main {
@@ -77,22 +98,22 @@ main {
     font-size: 20px;
     margin: auto;
     width: 300px;
-    height: 290px;
+    height: auto;
     border: 1px solid darkgray;
-    border-radius: 10px;
+    border-radius: 5px;
 
 }
 
 .card ul {
     list-style: none;
     text-align: end;
-    margin: 10px;
+    margin-right: 10px;
     padding: 10px;
     display: block;
 }
 
 .card ul li {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .descricao {
@@ -112,14 +133,24 @@ main {
     font-weight: bold;
 }
 
+.quantidade-input{
+    margin-bottom: 5px;
+    width: 60px;
+}
+
+.quantidade i {
+    padding: 5px;
+    margin: 5px;
+}
+
 .card-link {
     text-align: end;
     font-size: 15px;
-    margin: 10px;
+    margin: 5px;
     padding : 10px;
 }
 .card-link a {
-    margin: 20px;
+    margin: 5px;
 }
 
 .card-link-atualizar {
