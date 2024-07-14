@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 from tecno.models import Categoria
 
@@ -10,3 +10,8 @@ def lista_categoria(request):
     }
 
     return render(request, 'categoria/lista_categoria.html', context= context)
+
+def deletar_categoria(categoria, index):
+    del_categoria = Categoria.objects.filter(index = index).delete()
+
+    return redirect('lista_categoria')

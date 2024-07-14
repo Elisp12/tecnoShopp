@@ -10,6 +10,7 @@
             {% for lcat in lista_categoria %}
                 <tr>
                     <td>{{ lcat.nome }}</td>
+                    <td><a href="/deletar/categoria/{{lcat.index}}">Deletar </a></td>
                 </tr>
             {% endfor %}
         </table>

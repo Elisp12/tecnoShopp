@@ -6,6 +6,7 @@ from .views.deletar_produto import deletar_produto
 from .views.criar_ctegoria import criar_categoria
 from .views.produto_da_categoria import produto_da_categoria
 from .views.lista_categoria import lista_categoria
+from .views.lista_categoria import deletar_categoria
 
 urlpatterns = [
     path('', lista_produto, name='lista_produto'),
@@ -15,4 +16,5 @@ urlpatterns = [
     path('criar/categoria/', criar_categoria, name= 'criar_categoria'),
     path('categoria/produto/<int:index>/', produto_da_categoria, name= 'produto_da_categoria'),
     path('lista/categoria/', lista_categoria, name="lista_categoria"),
+    path('deletar/categoria/<int:index>/', deletar_categoria, name= 'deletar_categoria'),
 ]
