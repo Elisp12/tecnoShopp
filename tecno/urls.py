@@ -3,7 +3,7 @@ from .views.lista_produto import lista_produto
 from .views.criar_produto import criar_produto
 from .views.atualizar_produto import atualizar_produto
 from .views.deletar_produto import deletar_produto
-from .views.criar_ctegoria import criar_categoria
+from .views.criar_categoria import criar_categoria
 from .views.produto_da_categoria import produto_da_categoria
 from .views.lista_categoria import lista_categoria
 from .views.lista_categoria import deletar_categoria
