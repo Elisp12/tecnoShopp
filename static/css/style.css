@@ -6,37 +6,42 @@ body {
 
 .header-container {
     background-color: rgb(16, 8, 42);
-    margin: auto;
     padding: 15px;
+
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-flow: wrap;
 }
 
 .header-titulo {
-    margin: auto;
     padding:30px 0 30px 30px;
     width: 200px;
+
+    margin: auto;
 }
 
 .header-titulo a {
-    text-align: center;
     color: azure;
 }
 
 .header-titulo p{
+    margin: auto;
     text-transform: uppercase;
     padding: 10px;
-    margin: auto;
     background-color: rgb(93, 10, 10);
 } 
 
 .header-container a {
     text-decoration: none;
+    margin: auto;
 }
 
 .header-nav {
     font-size: 15px;
     width: 180px;
+    padding-right: 15px;
+
+    text-align: end;
 }
 
 .header-nav li {
@@ -56,18 +61,20 @@ body {
 }
 
 .header-nav li ul li {
-    padding-bottom: 3px;
+    padding-bottom: 4px;
 }
 
 .header-nav a {
     text-transform: uppercase;
-    color: yellow;
+    color:yellowgreen;
     margin: 5px;
+    margin-top: 5px;
     padding-bottom: 5px;
 }
 
 .header-container a:hover {
-    color: rgb(24, 104, 21);
+    color: darkcyan;
+    font-weight: bold;
 }
 
 main {
@@ -222,6 +229,51 @@ main {
     font-weight: bold;
     color: darkred;
 }
+
+.lista-categoria {
+    height: 90vh;
+    padding: 50px;
+}
+
+.lista-categoria table {
+    background-color: aliceblue;
+    margin: auto;
+    padding: 15px;
+    width: 60%;
+
+    border: 1px solid gray;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lista-categoria tr th{
+    padding-bottom: 15px;
+    width: 500px;
+    text-transform: uppercase;
+    border-bottom: 1px solid gray;
+}
+
+.lista-categoria tr td {
+    padding: 5px;
+}
+
+.td-link {
+    text-align: center;
+}
+
+.td-link a {
+    color: red;
+}
+
+.td-link a:hover {
+    font-weight: bold;
+}
+ 
+
+
 
 .footer {
     background-color: darkgray;

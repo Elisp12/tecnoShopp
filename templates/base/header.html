@@ -11,7 +11,7 @@
     <nav class="header-nav">
         <div>
             <ul>
-                <li>Cadastrar
+                <li><i class="fa-solid fa-bars"></i>
                     <ul>
                         <li>
                             <a href="{% url 'criar_produto' %}">Novo Item</a>
@@ -19,7 +19,9 @@
                         <li>
                             <a href="{% url 'criar_categoria' %}">Nova Categoria</a>
                         </li>
-                        <li><a href="{% url 'lista_categoria' %}">Lista Categoria</a></li>
+                        <li>
+                            <a href="{% url 'lista_categoria' %}">Categorias</a>
+                        </li>
                     </ul>
                 </li>
             </ul>

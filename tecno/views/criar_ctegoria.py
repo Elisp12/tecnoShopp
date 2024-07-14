@@ -6,10 +6,12 @@ def criar_categoria(request):
     nome = request.POST.get('nome')
     
     print(nome)
+
     
     if request.method == 'POST':
-        categoria = Categoria.objects.filter(nome = nome).update(nome = nome)
-        return redirect('lista_produto')
+        categoria = Categoria.objects.create(nome = nome)
+
+        return redirect('lista_categoria')
     
     categoria = Categoria.objects.all()
     context = {
