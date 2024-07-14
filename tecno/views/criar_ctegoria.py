@@ -9,7 +9,7 @@ def criar_categoria(request):
 
     
     if request.method == 'POST':
-        categoria = Categoria.objects.create(nome = nome)
+        categoria = Categoria.objects.update_or_create(nome = nome)
 
         return redirect('lista_categoria')
     
