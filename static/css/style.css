@@ -8,16 +8,14 @@ body {
     background-color: rgb(16, 8, 42);
     padding: 15px;
 
-    display: flex;
-    flex-direction: column;
-    flex-flow: wrap;
 }
 
 .header-titulo {
-    padding:30px 0 30px 30px;
-    width: 200px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 
-    margin: auto;
+    margin: auto;  
 }
 
 .header-titulo a {
@@ -36,40 +34,24 @@ body {
     margin: auto;
 }
 
-.header-nav {
-    font-size: 15px;
-    width: 180px;
-    padding-right: 15px;
-
-    text-align: end;
+.header-nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: end;
+    justify-content: end;
 }
 
 .header-nav li {
     color: aqua;
     list-style: none;
     text-transform: uppercase;
-}
-
-.header-nav li ul{
-    height: 0;
-    overflow: hidden;
-    transition: heigth 0.5s;
-}
-.header-nav li:hover ul {
-    font-size: 10px;
-    height: 50px;
-}
-
-.header-nav li ul li {
-    padding-bottom: 4px;
+    padding: 5px;
 }
 
 .header-nav a {
     text-transform: uppercase;
+    font-size: 10px;
     color:yellowgreen;
-    margin: 5px;
-    margin-top: 5px;
-    padding-bottom: 5px;
 }
 
 .header-container a:hover {
