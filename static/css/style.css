@@ -59,6 +59,20 @@ body {
     font-weight: bold;
 }
 
+.messages {
+    list-style: none;
+    text-align: center;
+    
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
 main {
     height: auto;
     background-color: rgb(195, 199, 199);

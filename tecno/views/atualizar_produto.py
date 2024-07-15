@@ -14,7 +14,7 @@ def atualizar_produto(request, index):
     if request.method == 'POST':
         Produto.objects.filter(index = index).update(nome = nome, descricao = descricao, categoria = Categoria.objects.get(index = categoria), quantidade = quantidade)
         
-        messages.success(request, 'Atulizado com sucesso!')
+        messages.success(request, 'Item Atulizado com sucesso!')
         
         return redirect('lista_produto')
     

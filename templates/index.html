@@ -5,16 +5,15 @@
 </head>
 <body>
     {% include 'base/header.html' %}
-    <main>
-
     {% if messages %}
-        <ul class="messages">
-            {% for message in messages %}
-            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-            {% endfor %}
-        </ul>
+    <ul class="messages">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
     {% endif %}
-
+    
+    <main>
         {% block content %}
         {% endblock %}
     </main>

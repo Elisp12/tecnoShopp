@@ -12,10 +12,3 @@ def lista_categoria(request):
     }
 
     return render(request, 'categoria/lista_categoria.html', context= context)
-
-def deletar_categoria(request, index):
-    del_categoria = Categoria.objects.filter(index = index).delete()
-
-    messages.success(request, 'categoria deletada!')
-
-    return redirect('lista_categoria')
