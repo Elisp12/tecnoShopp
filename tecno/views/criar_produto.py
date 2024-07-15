@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.contrib import messages
 
 from tecno.models import Categoria, Produto
 
@@ -10,7 +11,10 @@ def criar_produto(request):
     quantidade = request.POST.get('quantidade')
     
     if request.method == 'POST':
-        Produto.objects.create(nome = nome, descricao = descricao, categoria = Categoria.objects.get(index = categoria), quantidade = quantidade)
+        Produto.objects.update_or_create(nome = nome, descricao = descricao, categoria = Categoria.objects.get(index = categoria), quantidade = quantidade)
+        
+        messages.success(request, 'Item criado com sucesso!')
+
         return redirect('lista_produto')
 
     lista_categoria = Categoria.objects.all()

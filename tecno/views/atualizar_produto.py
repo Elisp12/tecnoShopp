@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.contrib import messages
 
 from tecno.models import Categoria, Produto
 
@@ -12,6 +13,9 @@ def atualizar_produto(request, index):
 
     if request.method == 'POST':
         Produto.objects.filter(index = index).update(nome = nome, descricao = descricao, categoria = Categoria.objects.get(index = categoria), quantidade = quantidade)
+        
+        messages.success(request, 'Atulizado com sucesso!')
+        
         return redirect('lista_produto')
     
     lista_categoria = Categoria.objects.all()

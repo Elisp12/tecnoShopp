@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <div class="lista-categoria">
+        <table>
+            <tr>
+                <th>Categorias</th>
+                <th>deletar</th>
+            </tr>
+            {% for lcat in lista_categoria %}
+                <tr>
+                    <td>{{ lcat.nome }}</td>
+                    <td class="td-link"><a href="/deletar/categoria/{{lcat.index}}">Deletar</a></td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

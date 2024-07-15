@@ -6,70 +6,57 @@ body {
 
 .header-container {
     background-color: rgb(16, 8, 42);
-    margin: auto;
     padding: 15px;
-    right: 500px;
-    display: flex;
-    flex-wrap: wrap;
+
 }
 
 .header-titulo {
-    margin: auto;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    width: 200px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: auto;  
 }
 
 .header-titulo a {
-    text-align: center;
     color: azure;
 }
 
 .header-titulo p{
+    margin: auto;
     text-transform: uppercase;
     padding: 10px;
-    margin: auto;
     background-color: rgb(93, 10, 10);
 } 
 
 .header-container a {
     text-decoration: none;
+    margin: auto;
 }
 
-.header-nav {
-    font-size: 15px;
-    width: 180px;
+.header-nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: end;
+    justify-content: end;
 }
 
 .header-nav li {
     color: aqua;
     list-style: none;
     text-transform: uppercase;
-}
-
-.header-nav li ul{
-    height: 0;
-    overflow: hidden;
-    transition: heigth 0.5s;
-}
-.header-nav li:hover ul {
-    font-size: 10px;
-    height: 30px;
-}
-
-.header-nav li ul li {
-    padding-bottom: 3px;
+    padding: 5px;
 }
 
 .header-nav a {
     text-transform: uppercase;
-    color: yellow;
-    margin: 5px;
-    padding-bottom: 5px;
+    font-size: 10px;
+    color:yellowgreen;
 }
 
 .header-container a:hover {
-    color: rgb(24, 104, 21);
+    color: darkcyan;
+    font-weight: bold;
 }
 
 main {
@@ -224,6 +211,51 @@ main {
     font-weight: bold;
     color: darkred;
 }
+
+.lista-categoria {
+    height: 90vh;
+    padding: 50px;
+}
+
+.lista-categoria table {
+    background-color: aliceblue;
+    margin: auto;
+    padding: 15px;
+    width: 60%;
+
+    border: 1px solid gray;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lista-categoria tr th{
+    padding-bottom: 15px;
+    width: 500px;
+    text-transform: uppercase;
+    border-bottom: 1px solid gray;
+}
+
+.lista-categoria tr td {
+    padding: 5px;
+}
+
+.td-link {
+    text-align: center;
+}
+
+.td-link a {
+    color: red;
+}
+
+.td-link a:hover {
+    font-weight: bold;
+}
+ 
+
+
 
 .footer {
     background-color: darkgray;

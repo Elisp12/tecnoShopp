@@ -11,15 +11,14 @@
     <nav class="header-nav">
         <div>
             <ul>
-                <li>Cadastrar
-                    <ul>
-                        <li>
-                            <a href="{% url 'criar_produto' %}">Novo Item</a>
-                        </li>
-                        <li>
-                            <a href="{% url 'criar_categoria' %}">Nova Categoria</a>
-                        </li>
-                    </ul>
+                <li>
+                    <a href="{% url 'criar_produto' %}">Novo Item</a>
+                </li>
+                <li>
+                    <a href="{% url 'criar_categoria' %}">Nova Categoria</a>
+                </li>
+                <li>
+                    <a href="{% url 'lista_categoria' %}">Categorias</a>
                 </li>
             </ul>
         </div>

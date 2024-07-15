@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.contrib import messages
 
 from tecno.models import Categoria
 
@@ -6,10 +7,14 @@ def criar_categoria(request):
     nome = request.POST.get('nome')
     
     print(nome)
+
     
     if request.method == 'POST':
-        categoria = Categoria.objects.create(nome = nome)
-        return redirect('lista_produto')
+        categoria = Categoria.objects.update_or_create(nome = nome)
+
+        messages.success(request,'Categoria criada com sucesso!' )
+
+        return redirect('criar_categoria')
     
     categoria = Categoria.objects.all()
     context = {
