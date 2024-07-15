@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
+from django.contrib import messages
 
 from tecno.models import Categoria
+
 
 def lista_categoria(request):
     l_categoria = Categoria.objects.all()
@@ -13,5 +15,7 @@ def lista_categoria(request):
 
 def deletar_categoria(request, index):
     del_categoria = Categoria.objects.filter(index = index).delete()
+
+    messages.success(request, 'categoria deletada!')
 
     return redirect('lista_categoria')
